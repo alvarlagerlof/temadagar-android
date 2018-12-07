@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dayinfo_cardview_margin_side">16dp</dimen>
+    <dimen name="dayinfo_scroll_top">106dp</dimen>
+    <dimen name="dayinfo_cardview_corners">2dp</dimen>
+    <dimen name="dayinfo_image_height">400dp</dimen>
+    <dimen name="dayinfo_bottom_margin">186dp</dimen>
+
+</resources>

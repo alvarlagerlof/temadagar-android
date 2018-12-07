@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="cardview_margin_side">0dp</dimen>
+    <dimen name="cardview_margin_top">0dp</dimen>
+
+    <dimen name="dayinfo_cardview_margin_side">-2.5dp</dimen>
+
+    <dimen name="dayinfo_bottom_margin">180dp</dimen>
+
+
+    <dimen name="dayinfo_shadow">4dp</dimen>
+
+    <dimen name="dayinfo_scroll_top">80dp</dimen>
+
+    <dimen name="v19toolbarDayinfoTop">0dp</dimen>
+
+
+</resources>

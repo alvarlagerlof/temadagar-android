@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="textColor">#000000</color>
+    <color name="textColorSecondary">#ff646464</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="clickColor">#1A000000</color>
+    <color name="widgetImageBackground">#26000000</color>
+
+    <color name="dayinfoBackground">#f4f4f4</color>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+
+
+    <color name="preference_fallback_accent_color">@color/colorAccent</color>
+
+    <color name="statusBar">#33000000</color>
+
+    <color name="slide_1">#181818</color>
+    <color name="slide_2">@color/colorAccent</color>
+    <color name="slide_3">@color/colorPrimary</color>
+    <color name="slide_4">#455A64</color>
+
+    <color name="navigation_background_color">#0D000000</color>
+
+
+</resources>

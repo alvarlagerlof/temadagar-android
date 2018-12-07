@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="app_bar_top_padding">0dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="v19toolbarDayinfoTop">0dp</dimen>
+
+    <dimen name="dayinfo_bottom_margin">150dp</dimen>
+    <dimen name="dayinfo_cardview_margin_side">-4.5dp</dimen>
+    <dimen name="dayinfo_cardview_corners">0dp</dimen>
+    <dimen name="dayinfo_scroll_top">76dp</dimen>
+    <dimen name="dayinfo_shadow">0dp</dimen>
+
+    <dimen name="cardview_margin_side">-4.5dp</dimen>
+    <dimen name="cardview_margin_top">-6.9dp</dimen>
+
+
+    <dimen name="settings_margin_top">55dp</dimen>
+
+    <dimen name="custom_peek_height">1000dp</dimen>
+
+
+
+</resources>

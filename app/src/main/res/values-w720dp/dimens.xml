@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dayinfo_bottom_margin">196dp</dimen>
+    <dimen name="dayinfo_cardview_margin_side">86dp</dimen>
+    <dimen name="dayinfo_image_height">450dp</dimen>
+
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/widget_image"
+        android:scaleType="fitXY"
+        android:background="@color/widgetImageBackground"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/widget_today_text_white"
+                android:visibility="gone"
+                android:text="Idag är det:"
+                android:textColor="#FFF"/>
+
+            <TextView
+                style="@style/textSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/widget_today_text_black"
+                android:text="Idag är det:"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/widget_more_number_white"
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="+0"
+                android:layout_weight="1"
+                android:textColor="#FFF"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/widget_more_number_black"
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="+0"
+                android:layout_weight="1"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/widget_title_text_white"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laddar..."
+            android:textColor="#FFF"
+            android:visibility="gone"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/widget_title_text_black"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laddar..."
+            android:textColor="#000"
+            android:singleLine="true"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

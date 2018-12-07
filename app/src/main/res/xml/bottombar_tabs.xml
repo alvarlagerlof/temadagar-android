@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_new"
+        icon="@drawable/ic_tab_new"
+        title="Senast tillagda"
+        barColorWhenSelected="#FFF" />
+    <tab
+        id="@+id/tab_all"
+        icon="@drawable/ic_tab_all"
+        title="Alla"
+        barColorWhenSelected="#FFF" />
+    <tab
+        id="@+id/tab_popular"
+        icon="@drawable/ic_tab_popular"
+        title="Populära"
+        barColorWhenSelected="#FFF" />
+
+
+</tabs>

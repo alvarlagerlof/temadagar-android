@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.test.alvar.temadagar.Image">
+
+    <item
+        android:title="Dela dagen"
+        android:orderInCategory="150"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_dayinfo_share_white"
+        android:onClick="share"
+        android:id="@+id/share_white"/>
+
+    <item
+        android:title="Ge feedback"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_feedback"
+        android:onClick="feedback"
+        android:id="@+id/feedback_white"/>
+
+
+
+
+
+    <item
+        android:title="Dela dagen"
+        android:orderInCategory="150"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_dayinfo_share_black"
+        android:onClick="share"
+        android:id="@+id/share_black"/>
+
+    <item
+        android:title="Ge feedback"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_feedback_black"
+        android:onClick="feedback"
+        android:id="@+id/feedback_black"/>
+
+</menu>

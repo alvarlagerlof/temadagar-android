@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:enabled="true">
+
+    <PreferenceCategory android:title="Notifikationer">
+
+        <CheckBoxPreference
+            android:title="Dagens temadag"
+            android:key="notificationsToday"
+            android:summary="Notikationer för dagens temadag"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:title="Nya temadagar"
+            android:key="notificationsNew"
+            android:summary="Notikationer för nya temadagar"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:title="Kommande temadagar"
+            android:key="notificationsComing"
+            android:summary="Notikationer för kommande temdagar"
+            android:defaultValue="false" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Widget">
+
+       <!-- <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:title="Färg"
+            android:summary="Välj en färg för widgeten"
+            android:defaultValue="#FFFFFF"
+            app:colorChoices="@array/widget_colors"
+            android:key="widget_color" /> -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Övrigt">
+
+        <Preference
+            android:title="Betygsätt"
+            android:summary="Det tar bara någon miunut, men hjälper mycket!"
+            android:key="rate"
+            android:icon="@drawable/ic_settings_rate"/>
+
+        <Preference
+            android:title="Om appen"
+            android:key="versionInfo"
+            android:summary="Version"
+            android:icon="@drawable/ic_settings_info"/>
+
+        <Preference
+            android:title="Open source libraries"
+            android:summary="Bibliotek som används i appen"
+            android:key="libaries"
+            android:icon="@drawable/ic_settings_libaries"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

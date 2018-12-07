@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alvarlagerlof.temadagarapp">
+
+    <uses-sdk tools:node="merge"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission android:name=".permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name=".permission.C2D_MESSAGE" />
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+
+        // Home
+        <activity
+            android:name=".Main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.BrandedLaunch"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        // Day Info
+        <activity
+            android:name=".Dayinfo.DayInfo"
+            android:parentActivityName=".Main.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="http"
+                    android:host="temadagar.ravla.org"
+                    android:pathPrefix="/"/>
+            </intent-filter>
+        </activity>
+
+
+
+        // Search
+        <activity
+            android:name=".Search.Search"
+            android:label=""
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/Search"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main.MainActivity" />
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+        // AboutLibariess
+
+
+        // Settings
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:label="Inställningar"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main.MainActivity" />
+        </activity>
+
+
+
+        // Widget
+        <receiver
+            android:name=".Widget.Widget"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_info" />
+        </receiver>
+
+
+
+        // FCM
+        <service
+            android:name=".FCM.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FCM.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+
+
+    </application>
+
+</manifest>

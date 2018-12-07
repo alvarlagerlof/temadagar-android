@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/transparent"
+            android:background="@color/transparent"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="0dp"
+            android:layout_marginTop="@dimen/cardview_margin_top"
+            android:layout_marginLeft="@dimen/cardview_margin_side"
+            android:layout_marginRight="@dimen/cardview_margin_side"
+            android:id="@+id/toolbar_cardview"
+            android:layout_alignParentTop="true">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/app_bar_top_padding"
+                android:minHeight="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:titleTextColor="@color/white"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextAppearance="@style/ToolbarTitle" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/settings_margin_top" />
+
+    </RelativeLayout>
+
+</LinearLayout>
