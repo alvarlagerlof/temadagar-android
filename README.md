@@ -1,4 +1,4 @@
-# 🗓 Temadagar for Android
+# Temadagar for Android
 Temadagar is an app made for all special days like "Cinnamon bun day" or "Pancake day"
 
 ## Screenshots
